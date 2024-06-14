@@ -87,7 +87,24 @@ const SignUp = () => {
                     className="position-absolute eye"
                     style={{ top: "33px", right: "10px", cursor: "pointer" }}
                   >
-                    {passwordVisible ? <i className="ri-eye-fill"></i> : <i className="ri-eye-off-fill"></i>}
+                    {passwordVisible ? <i className="ri-eye-off-fill"></i> : <i className="ri-eye-fill"></i>}
+                  </span>
+                </FormGroup>
+                <FormGroup className="position-relative">
+                  <Label for="password">Confirm Password</Label>
+                  <Input
+                    type={passwordVisible ? "text" : "password"}
+                    name="password"
+                    id="password"
+                    placeholder="Confirm your Password"
+                    required
+                  />
+                  <span
+                    onClick={togglePasswordVisibility}
+                    className="position-absolute eye"
+                    style={{ top: "33px", right: "10px", cursor: "pointer" }}
+                  >
+                    {passwordVisible ? <i className="ri-eye-off-fill"></i> : <i className="ri-eye-fill"></i>}
                   </span>
                 </FormGroup>
                 <button className="btn-login">Sign-Up</button>
