@@ -1,0 +1,43 @@
+.blog-item{
+    border: 1px solid #7c8a927e;
+}
+.blog-time{
+    border-top: 1px solid #7c8a927e;
+}
+
+.read-more{
+    color: #f9a826;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.read-more:hover{
+    color: #f9a826;
+}
+
+.blog-time span i {
+    color: #f9a826;
+}
+
+.blog-author{
+    color: #000d6b;
+    font-weight: 600;
+}
+
+.blog-author i {
+    font-weight: 500;
+}
+
+.blog-title{
+    text-decoration: none;
+    color: #000d6b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.blog-title:hover{
+    color: #f9a826;
+}
+
