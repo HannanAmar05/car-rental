@@ -13,7 +13,7 @@ import BlogList from "../components/UI/BlogList";
 
 const Home = () => {
   return (
-    <Helmet title="Home">
+    <Helmet title="Home" className="overflow-hidden">
       <section className="p-0 hero-slider-section">
         <HeroSlider />
         <div className="hero-form">
@@ -66,7 +66,7 @@ const Home = () => {
       <BecomeDriver />
 
       {/* ========= testimonial section ========= */}
-      <section>
+      <section className="overflow-hidden">
         <Container>
           <Row>
             <Col lg="12" className="mb-4 text-center">

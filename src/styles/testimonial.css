@@ -16,3 +16,6 @@
         object-fit: cover;
     }
 }
+.testimonial{
+    overflow-y: hidden;
+}
