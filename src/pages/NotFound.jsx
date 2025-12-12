@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Col, Container, Row } from "reactstrap";
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
-  )
-}
+    <Container>
+      <h1 className="vh-100 d-flex align-items-center justify-content-center">
+         Page NotFound 404
+      </h1>
+    </Container>
+  );
+};
 
-export default NotFound
+export default NotFound;

@@ -1,27 +1,17 @@
-import React from "react";
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import { Link } from "react-router-dom";
-import "../styles/contact.css"
+import "../styles/contact.css";
 
 const Contact = () => {
   const socialLinks = [
     {
-      url: "#",
-      icon: "ri-facbook-line",
-    },
-    {
-      url: "#",
+      url: "https://www.instagram.com/hannan.amr/",
       icon: "ri-instagram-line",
     },
     {
-      url: "#",
+      url: "https://www.linkedin.com/in/hannanamar/",
       icon: "ri-linkedin-line",
-    },
-    {
-      url: "#",
-      icon: "ri-twitter-line",
     },
   ];
 
@@ -61,21 +51,29 @@ const Contact = () => {
                   50A, Jember, Jawa Timur, Indonesia
                 </p>
                 <div className="d-flex align-items-center gap-2">
-                    <h6 className="mb-0 fs-6">Phone:</h6>
-                    <p className="section-description mb-0">+6288226189639</p>
+                  <h6 className="mb-0 fs-6">Phone:</h6>
+                  <p className="section-description mb-0">+123-456-789</p>
                 </div>
                 <div className="d-flex align-items-center gap-2">
-                    <h6 className="mb-0 fs-6">Email:</h6>
-                    <p className="section-description mb-0">amarhannan358@gmail.com</p>
+                  <h6 className="mb-0 fs-6">Email:</h6>
+                  <p className="section-description mb-0">
+                    amarhannan358@gmail.com
+                  </p>
                 </div>
 
-                <h6 className="fw-bold mt-4">Follow Us</h6>
-                <div className="d-flex align-items-center gap-4 mt-3">
-                    {
-                        socialLinks.map((item,index) => (
-                            <Link to={item.url} key={index} className="social-link-icon"><i className={item.icon}></i></Link>
-                        ))
-                    }
+                <h6 className="fw-bold mt-4">Connect With Me</h6>
+                <div className="d-flex align-items-center gap-2 mt-3">
+                  {socialLinks.map((item, index) => (
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href={item.url}
+                      key={index}
+                      className="social-link-icon"
+                    >
+                      <i className={item.icon}></i>
+                    </a>
+                  ))}
                 </div>
               </div>
             </Col>

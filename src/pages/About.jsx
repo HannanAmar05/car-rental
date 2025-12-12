@@ -45,7 +45,7 @@ const About = () => {
                   </span>
                   <div>
                     <h6 className="section-subtitle">Need Any Help?</h6>
-                    <h4>+6288226189639</h4>
+                    <h4>+123-456-789</h4>
                   </div>
                 </div>
               </div>
